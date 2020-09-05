@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Validation form</title>
+</head>
+<body>
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  Name: <input type="text" name="NAME"><br><br>
+  email: <input type="email" name="Email"><br><br>
+ 
+  number : <input type="tel" pattern="^\d{10}$" required name="Phone Number"><br><br>
+  <input type="submit" value="Submit">
+  
+</form>
+
+</body>
+</html>
